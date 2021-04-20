@@ -21,7 +21,7 @@ try:
     MANUFACTURER = sys.argv[3]
     PREDECESSOR = sys.argv[4]
     SALES = sys.argv[5]
-    val = "'"+ NAME + "'" + ", STR_TO_DATE('" + RELEASE_DATE + "','" + "%m/%d/%Y')','" + MANUFACTURER + "','" + PREDECESSOR + "','" + SALES + "'"
+    val = "'"+ NAME + "'" + ", STR_TO_DATE('" + RELEASE_DATE + "','" + "%m/%d/%Y'),'" + MANUFACTURER + "','" + PREDECESSOR + "','" + SALES + "'"
     python_db.insert("PLATFORM",val)
     res =python_db.executeSelect('SELECT * FROM PLATFORM;')
     res=res.split('\n')# split the header and data for printing
