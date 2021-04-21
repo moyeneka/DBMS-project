@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Game Database: Add Developer</title>
+    <title>Game Database: Select Developer</title>
   </head>
 
   <body>
@@ -11,16 +11,13 @@
         <a href = "/~scanales/project_python/AddDeveloper.php">Add a Developer</a> |
         <a href = "/~scanales/project_python/AddGame.php">Add a Game</a> |
         <a href = "/~scanales/project_python/ViewGames.php">View All Games</a> |
-        <a href = "/~scanales/project_python/SelectDeveloper.php">View Games from Developer</a> 
+        <a href = "/~scanales/project_python/SelectDeveloper.php">View Games from Developer</a>  
       </div>
 
-    <h3>Enter information about an item to add to the database:</h3>
+    <h3>View games made by a developer:</h3>
 
-    <form action="AddDeveloper.php" method="post">
+    <form action="SelectDeveloper.php" method="post">
       Name: <input type="text" name="NAME"><br>
-      Creation: <input type="text" name="CREATION"><br>
-      Games: <input type="text" name="GAMES"><br>
-      Location: <input type="text" name="Location"><br>
       <input name="submit" type="submit" >
     </form>
     <br><br>
@@ -33,12 +30,8 @@ if (isset($_POST['submit']))
 {
     // replace ' ' with '\ ' in the strings so they are treated as single command line args
     $NAME = escapeshellarg($_POST[NAME]);
-    $CREATION = escapeshellarg($_POST[CREATION]);
-    $GAMES = escapeshellarg($_POST[GAMES]);
-		$Location = escapeshellarg($_POST[Location]);
-		
 
-    $command = 'python3 Insert_Developer.py' . ' '.  $NAME . ' ' . $CREATION . ' ' .  $GAMES . ' ' . $Location;
+    $command = 'python3 select_developer.py' . ' '.  $NAME;
 
     // remove dangerous characters from command to protect web server
     $escaped_command = escapeshellcmd($command);
