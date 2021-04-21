@@ -1,7 +1,18 @@
 <html>
-<body>
-<h3>View GAME Details</h3>
-</body>
+   <head>
+      <title>Game Database: View Games</title>
+   </head>
+	
+   <body>
+     <div id = "links" align = "middle" >
+         <h2>Welcome to the database!</h2> <br>
+         <a href = "/~scanales/project_python/home.html">Home</a> |
+         <a href = "/~scanales/project_python/AddPlatform.php">Add a Platform</a> | 
+         <a href = "/~scanales/project_python/AddDeveloper.php">Add a Developer</a> |
+         <a href = "/~scanales/project_python/python_view_games.php">View All Games</a>
+      </div>
+   </body>
+	
 </html>
 
 <?php

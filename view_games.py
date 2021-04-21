@@ -4,8 +4,8 @@ import logging
 import python_db
 
 
-mysql_username = '' # please change to your username
-mysql_password= ''  # please change to your MySQL password
+mysql_username = 'moyeneka' # please change to your username
+mysql_password= 'eiw6Quah'  # please change to your MySQL password
 
 try:
     python_db.open_database('localhost',mysql_username,mysql_password,mysql_username) # open database

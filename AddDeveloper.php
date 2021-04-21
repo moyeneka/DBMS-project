@@ -1,17 +1,29 @@
 <html>
-<body>
-<h3>Enter information about an item to add to the database:</h3>
+  <head>
+    <title>Game Database: Add Developer</title>
+  </head>
 
-<form action="AddDeveloper.php" method="post">
-    Name: <input type="text" name="NAME"><br>
-    Creation: <input type="text" name="CREATION"><br>
-    Games: <input type="text" name="GAMES"><br>
-		Location: <input type="text" name="Location"><br>
-    <input name="submit" type="submit" >
-</form>
-<br><br>
+  <body>
+      <div id = "links" align = "middle" >
+        <h2>Welcome to the database!</h2> <br>
+        <a href = "/~scanales/project_python/home.html">Home</a> |
+        <a href = "/~scanales/project_python/AddPlatform.php">Add a Platform</a> | 
+        <a href = "/~scanales/project_python/AddDeveloper.php">Add a Developer</a> |
+        <a href = "/~scanales/project_python/python_view_games.php">View All Games</a> 
+      </div>
 
-</body>
+    <h3>Enter information about an item to add to the database:</h3>
+
+    <form action="AddDeveloper.php" method="post">
+      Name: <input type="text" name="NAME"><br>
+      Creation: <input type="text" name="CREATION"><br>
+      Games: <input type="text" name="GAMES"><br>
+      Location: <input type="text" name="Location"><br>
+      <input name="submit" type="submit" >
+    </form>
+    <br><br>
+
+  </body>
 </html>
 
 <?php
