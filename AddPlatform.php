@@ -11,6 +11,7 @@
       <a href = "/~scanales/project_python/AddDeveloper.php">Add a Developer</a> |
       <a href = "/~scanales/project_python/AddGame.php">Add a Game</a> |
       <a href = "/~scanales/project_python/ViewGames.php">View All Games</a> |
+      <a href = "/~scanales/project_python/ViewPlatform.php">View All Platform</a> |
       <a href = "/~scanales/project_python/SelectDeveloper.php">View Games from Developer</a> 
     </div>
 
