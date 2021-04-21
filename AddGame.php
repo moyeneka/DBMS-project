@@ -1,19 +1,31 @@
 <html>
-<body>
-<h3>Enter information about an item to add to the database:</h3>
+  <head>
+    <title>Game Database: Add Game</title>
+  </head>
 
-<form action="AddGame.php" method="post">
-    Id: <input type="text" name="ID"><br>
-		Name: <input type="text" name="NAME"><br>
-    ReleaseDate: <input type="text" name="RELEASE_DATE"><br>
-    Platform: <input type="text" name="PLATFORM"><br>
-		Developer: <input type="text" name="DEVELOPER"><br>
-		Genre: <input type="text" name="GENERE"><br>
-    <input name="submit" type="submit" >
-</form>
-<br><br>
+  <body>
+      <div id = "links" align = "middle" >
+        <h2>Welcome to the database!</h2> <br>
+        <a href = "/~scanales/project_python/home.html">Home</a> |
+        <a href = "/~scanales/project_python/AddPlatform.php">Add a Platform</a> | 
+        <a href = "/~scanales/project_python/AddDeveloper.php">Add a Developer</a> |
+        <a href = "/~scanales/project_python/AddGame.php">Add a Game</a> |
+        <a href = "/~scanales/project_python/python_view_games.php">View All Games</a> 
+      </div>
+    <h3>Enter information about an item to add to the database:</h3>
 
-</body>
+    <form action="AddGame.php" method="post">
+        Id: <input type="text" name="ID"><br>
+        Name: <input type="text" name="NAME"><br>
+        ReleaseDate: <input type="text" name="RELEASE_DATE"><br>
+        Platform: <input type="text" name="PLATFORM"><br>
+        Developer: <input type="text" name="DEVELOPER"><br>
+        Genre: <input type="text" name="GENERE"><br>
+        <input name="submit" type="submit" >
+    </form>
+    <br><br>
+
+  </body>
 </html>
 
 <?php
