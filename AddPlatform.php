@@ -12,7 +12,8 @@
       <a href = "/~scanales/project_python/AddGame.php">Add a Game</a> |
       <a href = "/~scanales/project_python/ViewGames.php">View All Games</a> |
       <a href = "/~scanales/project_python/ViewPlatform.php">View All Platform</a> |
-      <a href = "/~scanales/project_python/SelectDeveloper.php">View Games from Developer</a> 
+      <a href = "/~scanales/project_python/SelectDeveloper.php">View Games from Developer</a> |
+      <a href = "/~scanales/project_python/SearchBestSeller.php">Best Seller From Developer</a>
     </div>
 
     <h3>Enter information about an item to add to the database:</h3>
