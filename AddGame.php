@@ -23,6 +23,7 @@
         Platform: <input type="text" name="PLATFORM"><br>
         Developer: <input type="text" name="DEVELOPER"><br>
         Genre: <input type="text" name="GENERE"><br>
+        Total Sales: <input type="text" name="TOTAL_SALES"><br>
         <input name="submit" type="submit" >
     </form>
     <br><br>
@@ -40,8 +41,9 @@ if (isset($_POST['submit']))
     $PLATFORM = escapeshellarg($_POST[PLATFORM]);
 		$DEVELOPER = escapeshellarg($_POST[DEVELOPER]);
 		$GENRE = escapeshellarg($_POST[GENRE]);
+    $TOTAL_SALES = escapeshellarg($_POST[TOTAL_SALES]);
 
-    $command = 'python3 Insert_Game.py' . ' '. $ID . ' '. $NAME . ' ' . $RELEASE_DATE . ' ' . $PLATFORM . ' ' . $DEVELOPER . ' ' . $GENRE;
+    $command = 'python3 Insert_Game.py' . ' '. $ID . ' '. $NAME . ' ' . $RELEASE_DATE . ' ' . $PLATFORM . ' ' . $DEVELOPER . ' ' . $GENRE . ' ' . $TOTAL_SALES;
 
     // remove dangerous characters from command to protect web server
     $escaped_command = escapeshellcmd($command);

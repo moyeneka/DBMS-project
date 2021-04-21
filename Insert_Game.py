@@ -21,7 +21,8 @@ try:
     PLATFORM = sys.argv[4]
     DEVELOPER = sys.argv[5]
     GENRE = sys.argv[6]
-    val = "'"+ ID + "','" + NAME + "'" + ", STR_TO_DATE('" + RELEASE_DATE + "','" + "%m/%d/%Y'),'" + PLATFORM + "','" + DEVELOPER +  "','" + GENRE +"'"
+    TOTAL_SALES = sys.argv[7]
+    val = "'"+ ID + "','" + NAME + "'" + ", STR_TO_DATE('" + RELEASE_DATE + "','" + "%m/%d/%Y'),'" + PLATFORM + "','" + DEVELOPER +  "','" + GENRE + "','" + TOTAL_SALES + "'"
     python_db.insert("GAME",val)
     res =python_db.executeSelect('SELECT * FROM GAME;')
     res=res.split('\n')# split the header and data for printing
